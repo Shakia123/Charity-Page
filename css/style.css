@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.yellow{
+	color: #ffd42d;
+}
+.green{
+	color: #a8cf38;
+}
+.blue{
+	color: #01002f;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 1280px;
+	margin: auto;
+}
+header{
+	width: 100%;
+	padding: 10px 0px;
+	background-color: #ffffffe0;
+}
+img{
+    vertical-align: middle;
+    width: 30%;
+}
+.logo{
+	color: #ffd42d!important;
+	font-family: "Pacifico", cursive;
+}
+.nav-link:hover{
+    color: #ffd42d!important;
+}
+.nav-link{
+	color: #01002f!important;
+	font-weight: 500;
+    font-size: 22px;
+}
+.nav-item{
+	margin-left: 24px;
+}
+
+#banner{
+	background-image: url(../img/banner.png);
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: soft-light;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b-content{
+    height: 90vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.b-text{
+	margin-top: 200px;
+}
+.b-content h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.b-content p{
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+	margin-top: 30px;
+}
+.banner-btn{
+    margin-top: 40px;
+    background-color: #ffd42d;
+    padding: 20px 40px;
+    border: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 24px;
+    font-weight: 600;
+}
+.banner-btn:hover {
+    background-color: #01002f;
+    transition: 0.5s;
+}
+
+#about{
+	width: 100%;
+	padding: 90px 0px;
+}
+.about-title h2{
+	font-size: 46px;
+	color: #ffd42d;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 26px;
+}
+.a-item{
+	padding: 32px 16px;
+	text-align: center;
+	background-color: #eeeeee;
+    border-radius: 8px;
+    margin: 16px;
+}
+.a-item h3{
+	color: #01002f;
+	font-size: 18px;
+    margin: 16px 0px;
+    font-weight: 500;
+}
+.a-item p{
+	color: #5c5c5c;
+	font-size: 16px;
+	padding: 0px 16px;
+}
+.a-item i{
+	color: #ffd42d;
+	font-size: 24px;
+	background-color: white;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 100%;
+}
+
+#login{
+	width: 100%;
+	padding: 90px 0px;
+	/*background: linear-gradient(to right, #67cbed, #b0d7e5, #ffff);*/
+}
+/*.l-img{
+	width: 225%;
+}
+.l-title h1{
+	color: #009fd5;
+    font-weight: 600;
+    text-align: center;
+}*/
+.l-form{
+    margin: 30px 120px;
+}
+.l-form h2{
+	color: #01002f !important;
+}
+.form-group input{
+	width: 100%;
+    margin: 8px 0px;
+    padding: 10px 26px;
+}
+.form-group input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #01002f;
+}
+.l-btn{
+	padding: 14px 90px;
+    margin: 24px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    background-color: #01002f;
+    border-color: #02afea;
+    transition: 0.2s;
+}
+.l-btn:hover{
+	color: #01002f;
+	background-color: white;
+	border-color: #01002f;
+	border-width: 4px;
+	transition: 0.2s;
+}
+
+#donation{
+	width: 100%;
+	padding: 90px 0px;
+}
+.d-form{
+	margin-right: 60px;
+}
+.d-form label{
+	font-size: 18px;
+    font-weight: 500;
+	color: #01002f;
+}
+
+footer {
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #01002f;
+}
+.f-title{
+	margin-bottom: 38px;
+}
+.f-content-left{
+	margin-right: 180px;
+}
+.f-content-left p{
+	font-size: 16px;
+    color: #ffffffdb;
+    line-height: 28px;
+}
+.f-icon i{
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 100%;
+	background-color: #f5f5f52b;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffd42d;
+}
+.f-icon i:hover{
+	background-color: #ffd42d;
+	color: #01002f !important;
+}
+.f-icon a{
+	margin-right: 12px;
+}
+.f-icon{
+	margin-top: 40px;
+}
+.f-content-right{
+	margin-left: 180px;
+}
+.f-content-right h3{
+	color: #ffd42d;
+	margin-bottom: 22px;
+}
+.f-content-right span{
+	color: #ffffffdb;
+	font-size: 16px;
+	line-height: 28px;
+}
+.f-content-right i{
+	color: #ffd42d;
+	margin-right: 18px;
+    font-size: 18px;
+}
+.f-contact{
+	margin-bottom: 12px;
+}
+
+#banner2{
+	background-image: url(../img/pic-1.jpg);
+	width: 100%;
+	height: 30vh;
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: soft-light;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b2-content{
+	margin-top: 80px;
+}
+.b2-content h1{
+	color: #ffd42d;
+    font-weight: 600;
+    font-size: 50px;
+}
