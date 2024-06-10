@@ -5,9 +5,6 @@
 .yellow{
 	color: #ffd42d;
 }
-.green{
-	color: #a8cf38;
-}
 .blue{
 	color: #01002f;
 }
@@ -91,6 +88,26 @@ img{
 .banner-btn:hover {
     background-color: #01002f;
     transition: 0.5s;
+}
+.a-btn{
+    display: flex;
+    justify-content: right;
+
+}
+.admin-btn{
+    margin-top: 80px;
+    background-color: #ffd42d;
+    padding: 8px 14px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.admin-btn:hover {
+	background-color: white;
+    border-width: 4px;
+	color: #ffd42d;
+	border-color: #ffd42d;
 }
 
 #about{

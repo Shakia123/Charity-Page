@@ -212,6 +212,9 @@ include 'connection.php';
                 <span><i class="fa fa-envelope"></i></span>
                 <span>admin@info.com</span>
               </div>
+              <div class="a-btn">
+                <a href="admin/index.php"><button class="admin-btn">Admin Login</button></a>
+              </div>
             </div>
           </div>
         </div>
