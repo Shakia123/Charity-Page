@@ -43,9 +43,6 @@ include 'connection.php';
             <div class="navjustify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.php">Login</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="volunteerinfo.php">Volunteer Information</a>
                 </li>
                 <li class="nav-item">
@@ -53,6 +50,9 @@ include 'connection.php';
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Event.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.php">Login</a>
                 </li>
               </ul>
             </div>
