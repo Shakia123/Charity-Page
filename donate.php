@@ -127,8 +127,8 @@ include 'connection.php';
                     $res1 = mysqli_query($con, $sql1);
 
                     if($res1){
-                      header('Location: donation.php');
-                      exit();
+                      $id = mysqli_insert_id($con);
+                      header("Location: donation.php?id=$id");
                     }else{
                       echo 'Error!!';
                     }

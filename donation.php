@@ -1,6 +1,19 @@
+
 <?php
 ob_start();
 include 'connection.php';
+
+$id = $_GET['id'] ?? null;
+
+if (!$id) {
+    die('User ID is required.');
+}
+$user_query = "SELECT name FROM userinfo WHERE id = '$id'";
+$user_result = mysqli_query($con, $user_query);
+$user = mysqli_fetch_assoc($user_result);
+if (!$user) {
+    die('User not found.');
+}
 ?>
 
 <!DOCTYPE html>
@@ -94,21 +107,20 @@ include 'connection.php';
                         </form>
 
                         <?php
-                            if(isset($_POST['donate'])){
-                                $amount   = $_POST['amount'];
+                        if (isset($_POST['donate'])) {
+                            $amount = $_POST['amount'];
 
-                                //echo $amount;
+                            // Insert donation with user ID
+                            $sql6 = "INSERT INTO amount(id, amount) VALUES ('$id', '$amount')";
+                            $res6 = mysqli_query($con, $sql6);
 
-                                $sql6 = "INSERT INTO donation(amount) VALUES ('$amount')";
-                                $res6 = mysqli_query($con, $sql6);
-
-                                if($res6){
+                            if ($res6) {
                                 header('Location: index.php');
                                 exit();
-                                }else{
+                            } else {
                                 echo 'Error!!';
-                                }
                             }
+                        }
                         ob_end_flush();
                         ?>
                     </div>
