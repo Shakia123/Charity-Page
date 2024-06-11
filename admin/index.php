@@ -49,7 +49,7 @@ include 'connection.php';
             <div class="l-form">
               <form method="post">
                 <div class="form-group"> 
-                  <input type="text" name="fullname" placeholder="Full Name">
+                  <input type="text" name="name" placeholder="Full Name">
                 </div>
                 <div class="form-group"> 
                   <input type="email" name="email" placeholder="Email">
@@ -58,37 +58,29 @@ include 'connection.php';
                   <input type="password" name="password" placeholder="Password">
                 </div>
                 <div>
-                  <input type="submit" class="l-btn" value="Login"  name="log">
+                  <input type="submit" class="l-btn" value="Login"  name="login">
                     
                 </div>
               </form>
 
               <?php
-                if(isset($_POST['log'])){
-                  $name   = $_POST['fullname'];
+                if(isset($_POST['login'])){
+                  $name   = $_POST['name'];
                   $email  = $_POST['email'];
                   $pass   = $_POST['password'];
 
                   //echo $name.' '.$email.' '.$pass;
                   
-                  $mailcheck = "SELECT a_email FROM admin WHERE a_email = '$email'";
+                  $mailcheck = "SELECT * FROM admin WHERE a_name = '$name' AND a_email = '$email' AND a_password = '$pass'";
                   $mailcheck_res = mysqli_query ($con, $mailcheck);
-                  $mailcount = mysqli_num_rows($mailcheck_res);
 
-                  if($mailcount > 0){
-                    echo 'This Email already exists!';
+                  if(mysqli_num_rows($mailcheck_res) == 1){
+                    header('Location: donorInfo.php');
+                    exit();
                   }else{
-
-                    $add_user_sql = "INSERT INTO admin (a_name, a_email , a_password) 
-                    VALUES ('$name', '$email', '$pass')";
-                    $addUserRes = mysqli_query ($con, $add_user_sql);
-
-                    if($addUserRes){
-                      header('Location: donorInfo.php');
-                      exit();
-                    }else{
-                      echo 'Error!!';
-                    }
+                    echo 'Wrong username and password';
+                    header('Location: index.php');
+                    exit();
                   }
                 }
                 ob_end_flush();
