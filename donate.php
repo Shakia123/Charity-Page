@@ -85,19 +85,19 @@ include 'connection.php';
             <div class="l-form">
               <form method="post">
                 <div class="form-group mb-2"> 
-                  <input type="text" name="fullname" placeholder="Full Name">
+                  <input type="text" name="fullname" placeholder="Full Name" required>
                 </div>
                 <div class="form-group mb-2"> 
-                  <input type="email" name="email" placeholder="Email">
+                  <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group mb-2"> 
-                  <input type="number" name="Phone" placeholder="Phone Number">
+                  <input type="tel" name="tel" placeholder="Phone Number" required>
                 </div>
                 <div class="form-group mb-2"> 
-                  <input type="text" name="address" placeholder="Address">
+                  <input type="text" name="address" placeholder="Address" required>
                 </div>
                 <div class="form-group mb-2"> 
-                  <input type="password" name="password" placeholder="Password">
+                  <input type="password" name="password" placeholder="Password" required>
                 </div>
                 <div>
                   <input type="submit" class="l-btn" value="Registration"  name="reg">  

@@ -98,7 +98,7 @@ include 'connection.php';
                 $email   = $row['email'];
                 $phone   = $row['phone'];
                 $address = $row['address'];
-                $pass    = $row['Password'];
+                $pass    = $row['password'];
 
                 ?>
                 <form method="post">
@@ -109,7 +109,7 @@ include 'connection.php';
                     <input type="email" name="email" placeholder="Email" value="<?php echo $email;?>">
                   </div>
                   <div class="form-group mb-2"> 
-                    <input type="number" name="Phone" placeholder="Phone Number" value="<?php echo $phone;?>">
+                    <input type="tel" name="Phone" placeholder="Phone Number" value="<?php echo $phone;?>">
                   </div>
                   <div class="form-group mb-2"> 
                     <input type="text" name="address" placeholder="Address" value="<?php echo $address;?>">
