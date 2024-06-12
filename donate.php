@@ -70,7 +70,7 @@ include 'connection.php';
       <div class="container">
         <div class="row">
           <div class="b2-content text-left">
-            <h1>WELCOME TO LOGIN PAGE</h1>
+            <h1>User Registration</h1>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ include 'connection.php';
                   <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group mb-2"> 
-                  <input type="tel" name="tel" placeholder="Phone Number" required>
+                  <input type="tel" name="phone" placeholder="Phone Number" required>
                 </div>
                 <div class="form-group mb-2"> 
                   <input type="text" name="address" placeholder="Address" required>
@@ -108,7 +108,7 @@ include 'connection.php';
                 if(isset($_POST['reg'])){
                   $name   = $_POST['fullname'];
                   $email  = $_POST['email'];
-                  $phone  = $_POST['Phone'];
+                  $phone  = $_POST['phone'];
                   $address = $_POST['address'];
                   $pass   = $_POST['password'];
                   //echo $name.' '.$email.' '.$phone.' '.$address.' '.$pass;

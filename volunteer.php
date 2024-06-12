@@ -70,7 +70,7 @@ include 'connection.php';
       <div class="container">
         <div class="row">
           <div class="b2-content text-left">
-            <h1>WELCOME TO LOGIN PAGE</h1>
+            <h1>WELCOME TO VOLUNTEER PAGE</h1>
           </div>
         </div>
       </div>
